@@ -887,6 +887,8 @@ YQPackageSelector::addMenus()
 	_extrasMenu->addAction(_patchList->actionShowRawPatchInfo);
 #endif
 
+    // FIXME: it should not be present in openSUSE
+    _extrasMenu->addAction(_("Online &Search"), this, SLOT( onlineSearch() ) );
 
     //
     // Help menu
